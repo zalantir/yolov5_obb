@@ -34,6 +34,10 @@ def obb_nms(dets, scores, iou_thr, device_id=None):
             inds = dets_th.new_zeros(0, dtype=torch.int64)
         else:
             ori_inds = torch.arange(dets_th.size(0)) # 0 ~ n-1
+            
+            if not too_small.device == ori_inds.device:
+            too_small = too_small.to(ori_inds.device)
+            
             ori_inds = ori_inds[~too_small]
             dets_th = dets_th[~too_small] # (n_filter, 5)
             scores = scores[~too_small]

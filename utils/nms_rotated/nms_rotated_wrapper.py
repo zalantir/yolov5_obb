@@ -43,6 +43,7 @@ def obb_nms(dets, scores, iou_thr, device_id=None):
             scores = scores[~too_small]
 
             inds = nms_rotated_ext.nms_rotated(dets_th, scores, iou_thr)
+            inds = inds.to(ori_inds.device)  # new line
             inds = ori_inds[inds]
 
     if is_numpy:

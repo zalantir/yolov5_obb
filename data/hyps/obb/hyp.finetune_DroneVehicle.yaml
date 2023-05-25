@@ -1,6 +1,6 @@
 # YOLOv5 🚀 by Ultralytics, GPL-3.0 license
 
-lr0: 0.001 #0.0032 
+lr0: 0.0016 #0.0032 
 lrf: 0.12
 momentum: 0.843
 weight_decay: 0.00036

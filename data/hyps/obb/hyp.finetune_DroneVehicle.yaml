@@ -25,10 +25,10 @@ translate: 0.1
 scale: 0.9 #0.25
 shear: 0.0
 perspective: 0.0
-flipud: 0.5
+flipud: 0.0
 fliplr: 0.5
-mosaic: 0.75
-mixup: 0.1
+mosaic: 1 #0.75
+mixup: 0 #0.1
 copy_paste: 0.0
 cls_theta: 180
 csl_radius: 2.0

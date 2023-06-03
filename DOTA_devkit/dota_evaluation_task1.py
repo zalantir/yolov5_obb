@@ -290,8 +290,10 @@ def main():
     detpath = args.detpath
     annopath = args.annopath
     imagesetfile = args.imagesetfile
+    # For VSAI
+    classnames=[ 'small-vehicle', 'large-vehicle']
     # For DroneVehicle
-    classnames=['vehicle']
+    # classnames=['vehicle']
     # For DOTA-v2.0
     # classnames = [ 'plane', 'baseball-diamond', 'bridge', 'ground-track-field', 'small-vehicle', 'large-vehicle', 'ship',
     #      'tennis-court', 'basketball-court', 'storage-tank',  'soccer-ball-field', 'roundabout', 'harbor',
